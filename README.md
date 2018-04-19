@@ -4,12 +4,25 @@
 > This repository does not constitute financial advice and should not be taken as such. 
 > While cryptocurrency investments will definitely go up in value forever, they may also go down.
 
+## Conda Environment
+* Python 3.6
+* numpy 1.13.3
+* scipy 0.19.1
+* matplotlib 2.0.2
+* spyder 3.2.3
+* scikit-learn 0.19.0
+* h5py 2.7.0 
+* Pillow 4.2.1 
+* pandas 0.20.3
+* Anaconda 3
+* TensorFlow 1.3.0
+* [Keras 2.1.1](https://keras.io)
+
 ## Problem Description
 
 In this experiment I build an LSTM network in order to predict the price of Bitcoin based on scenario described at [1] and [3].
 
 ## Data
-The data about Bitcoin was extracted from [coinmarketcap.com](http://coinmarketcap.com).
 The training data consists of **multiple multivariate time series** with "day" as the time unit that start from **2013-12-27** to **2017-09-24**.
 The testing data has the same data schema as the training data and start from **2017-09-25** to **2017-11-27**.
 Finally, the model was blind tested using data from **2017-11-29** to **2017-12-06**.
