@@ -23,6 +23,7 @@
 In this experiment I build an LSTM network in order to predict the price of Bitcoin based on scenario described at [1] and [3].
 
 ## Data
+The data about Bitcoin was extracted from [coinmarketcap.com](https://coinmarketcap.com/).
 The training data consists of **multiple multivariate time series** with "day" as the time unit that start from **2013-12-27** to **2017-09-24**.
 The testing data has the same data schema as the training data and start from **2017-09-25** to **2017-11-27**.
 Finally, the model was blind tested using data from **2017-11-29** to **2017-12-06**.
@@ -48,7 +49,8 @@ LSTM params:
 |----|----|----|
 |0.003|0.048|0.603| 
 
-#### Blind Test:  
+#### Blind Test: 
+  
 Single day prediction from **2017-11-28** to **2017-12-05**:
 9669.40, 10035.91, 9830.83, 9993.55, 10367.92, 10770.16, 10858.19, 11521.98
 
